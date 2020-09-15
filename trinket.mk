@@ -222,9 +222,6 @@ PRODUCT_HOST_PACKAGES += \
 # MSM IRQ Balancer configuration file
 PRODUCT_COPY_FILES += device/qcom/$(TRINKET)/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
-# Powerhint configuration file
-PRODUCT_COPY_FILES += device/qcom/$(TRINKET)/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
-
 #PowerHAL
 TARGET_USES_NON_LEGACY_POWERHAL := false
 
