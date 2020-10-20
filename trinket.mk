@@ -222,9 +222,6 @@ PRODUCT_HOST_PACKAGES += \
 # MSM IRQ Balancer configuration file
 PRODUCT_COPY_FILES += device/qcom/$(TRINKET)/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
-# Powerhint configuration file
-PRODUCT_COPY_FILES += device/qcom/$(TRINKET)/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
-
 #PowerHAL
 TARGET_USES_NON_LEGACY_POWERHAL := false
 
@@ -308,7 +305,6 @@ TARGET_MOUNT_POINTS_SYMLINKS := false
 
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.crypto.volume.filenames_mode = "aes-256-cts" \
-ro.crypto.allow_encrypt_override = true \
 ro.crypto.dm_default_key.options_format.version = 2
 
 # Enable incremental FS feature
